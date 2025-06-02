@@ -6,12 +6,15 @@ public class Conditional {
 
         if (num > 0){
             System.out.println("number 는 0 보다 큽니다.");
-        }else System.out.println("number 는 0 보다 작습니다.");
+        }else if (num < 0){
+            System.out.println("number 는 0 보다 작습니다.");
+        }
+        else System.out.println("number는 0 입니다.");
 
 
-        int avo = 0;
+        boolean avo = true;
         int milk;
-        if (avo >= 1){
+        if (avo){
             milk = 6;
         }else milk = 1;
         System.out.println(milk);
