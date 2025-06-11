@@ -1,7 +1,5 @@
 package J25_06_10.org.example;
 
-import J25_06_10.org.example.animal.Person;
-
 class Helper {
     String helper = "helper";
 }

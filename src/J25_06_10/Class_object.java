@@ -61,9 +61,11 @@ public class Class_object {
 
 //        Person person = new Person();
         List<Person> people = new ArrayList<>();
+//        Person person1 = new Person();
         for (int i = 0; i < 100; i++) {
             System.out.print("age (if you put 0, break): "); int age = sc.nextInt();
             if (age == 0){
+                sc.close();
                 break;
             }
             int num = i + 1;
