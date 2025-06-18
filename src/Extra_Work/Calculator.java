@@ -1,4 +1,4 @@
-package J25_06_11;
+package Extra_Work;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
