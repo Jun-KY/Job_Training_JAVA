@@ -1,4 +1,4 @@
-package J25_06_16;
+package Extra_Work;
 
 public class Star {
     public static void main(String[] args){
