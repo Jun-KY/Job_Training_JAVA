@@ -38,13 +38,6 @@ class Person{
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public String getName() {
-        return name;
-    }
 
     @Override
     public String toString() {
