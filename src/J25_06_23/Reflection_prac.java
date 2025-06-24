@@ -37,22 +37,22 @@ public class Reflection_prac {
         System.out.println("\n [Method List]");
         Method[] methods = classs.getDeclaredMethods();
         for (Method method: methods){
-            System.out.println("Method: " + method.getName());
+            System.out.print("Method: " + method.getName());
             for(Class<?> paramType: method.getParameterTypes()){
-                System.out.println("Parameter type: " + paramType.getSimpleName());
+                System.out.println(" Parameter type: " + paramType.getSimpleName());
             }
         }
         try{
             Object instance = classs.getDeclaredConstructor().newInstance();
             Method greetMethod = classs.getMethod("greet", String.class);
             Object greetResult = greetMethod.invoke(instance, "Jun");
-            System.out.println("\n[Public method execution result");
+            System.out.println("\n [Public method execution result]");
             System.out.println("greet(): " + greetResult);
 
-            Method revealMethod = classs.getMethod("reveal", String.class);
+            Method revealMethod = classs.getDeclaredMethod("reveal", String.class);
             revealMethod.setAccessible(true);
             Object revealResult = revealMethod.invoke(instance, "abcd");
-            System.out.println("\n [private method execution result");
+            System.out.println("\n [private method execution result]");
             System.out.println("reveal(): " + revealResult);
         } catch (Exception e) {
             e.printStackTrace();
